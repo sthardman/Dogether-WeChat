@@ -1,0 +1,4 @@
+<template name="divider">
+  <view class="divider"></view>
+</template>
+

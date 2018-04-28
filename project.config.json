@@ -1,0 +1,87 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.94",
+	"appid": "wx0bdfdfe1509d510a",
+	"projectname": "Dogether%20wechat%203.6",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"id": -1,
+			"name": "search",
+			"pathName": "pages/search/search",
+			"query": ""
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 7,
+			"list": [
+				{
+					"id": -1,
+					"name": "my apps",
+					"pathName": "pages/application_my_apps/application_my_apps",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "Application List",
+					"pathName": "pages/application_list/application_list",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "Application Confirm",
+					"pathName": "pages/application_confirm/application_confirm",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "Application My Apps",
+					"pathName": "pages/application_my_apps/application_my_apps",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "Application New",
+					"pathName": "pages/application_new/application_new",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "Application Show",
+					"pathName": "pages/application_show/application_show",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "Index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "User",
+					"pathName": "pages/user/user"
+				}
+			]
+		}
+	}
+}

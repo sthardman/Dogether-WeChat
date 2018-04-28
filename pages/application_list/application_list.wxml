@@ -1,0 +1,35 @@
+<view class="pet-applications-bg">
+
+  <view class="applications">
+
+  <view class="h1 white"> APPLICANTS</view>
+  <view class="h4 white"></view>
+
+<view class="applicants-box">
+    <view wx:for="{{my_apps}}" bindtap="showApplication"wx:for-item="my_app" wx:key="my_app.id" class="applicants-row" data-pet="{{my_apps}}" id="{{my_app.id}}" class="applicants-row">
+    <view class="applicants-avatar">
+        <image class="avatar-sm" src="{{my_app.user_image}}"/>
+    </view>
+    <view class="applicants-name">
+    {{my_app.user_name}}
+    </view>
+    <view class="applicants-time">
+    {{my_app.time_updated}} Ago
+    </view>
+    <view class="applicants-btn">
+      <block wx:if="{{my_app.status}}">
+      <view class="applicants-status-declined">
+      DENIED
+      </view>
+    </block>
+    <block else>
+      <view class="applicants-status-pending">
+      PENDING
+      </view>
+    </block>
+    </view>
+    </view>
+    </view>
+  </view>
+
+</view>

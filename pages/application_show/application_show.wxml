@@ -1,0 +1,37 @@
+
+<view class="pet-name-owner-row">
+  <view class="pet-name-city-col">
+    <view class="pet-name-div">
+               {{application.user_name}}
+    </view>
+    <view class="pet-city-div">
+        {{application.user_city}}
+    </view>
+  </view>
+  <view class="pet-name-city-vir-div">
+  </view>
+  <view class="pet-owner-avatar-city-col">
+    <view class="pet-owner-avatar-div">
+
+      <image class="avatar-circle-profile" src="{{application.user_image}}"/>
+    </view>
+  </view>
+</view>
+
+<view class="user-description">
+<view class="h2">Why I Want This Pet:</view>
+<view class="p">
+{{application.comment}}
+</view>
+<view class="h2">Contact info:</view>
+<view class="p">
+{{application.contact_comment}}
+</view>
+</view>
+
+
+<view class="pet-menu-bar">
+
+  <view class="pet-menu-btn-left" bindtap="newApplication">ACCEPT</view>
+  <button class="pet-menu-btn-right" open-type='share'>DECLINE</button>
+</view>

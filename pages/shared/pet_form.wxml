@@ -1,0 +1,117 @@
+<template name="pet_form">
+  <view class="pet-container">
+    <view class="wrap">
+      <form bindsubmit="bindSubmit">
+      
+        <view class="user-input">
+          <view class="text-area-wrap">
+            <textarea value="{{name}}" style="input-size" placeholder="Pet's name" placeholder-style="color:black;" class="input-height" name="name" maxlength="-1" auto-height adjust-position="true" />
+          </view>
+        </view>
+
+        <view class="user-input">
+          <view class="text-area-wrap">
+            <textarea value="{{color}}" style="input-size" placeholder="Pet's color" placeholder-style="color:black;" class="input-height" name="color" maxlength="-1" auto-height adjust-position="true" />
+          </view>
+        </view>
+
+        <view class="user-input">
+         <view class="text-area-wrap">
+            <textarea value="{{age}}" style="input-size" placeholder="Pet's age" placeholder-style="color:black;" class="input-height" name="age" maxlength="-1" auto-height adjust-position="true" />
+          </view>
+        </view>
+        
+        <view class="user-input">
+         <view class="text-area-wrap">
+            <textarea value="{{pet_city}}" style="input-size" placeholder="Pet's city" placeholder-style="color:black;" class="input-height" name="pet_city" maxlength="-1" auto-height adjust-position="true" />
+          </view>
+        </view>
+        
+
+        <view class="user-input">
+          <picker bindchange="bindSizeChange" value="{{sizeArray[size_index]}}" name="size" range="{{sizeArray}}"  >
+            <view class="picker" placeholder="Tap to choose size">Size: {{sizeArray[size_index]}}</view> 
+          </picker>
+        </view>
+        
+        <view class="user-input">
+          <view class="text-area-wrap">
+            <textarea value="{{description}}" style="input-size" placeholder="About the Pet..." placeholder-style="color:black;" class="input-height" name="description" maxlength="-1" style="height:40px;" adjust-position="true" />
+          </view>
+        </view>
+
+        <view class="user-input">
+          <view class="text-area-wrap">
+            <textarea value="{{pet_type}}" style="input-size" placeholder="Type" placeholder-style="color:black;" class="input-height" name="pet_type" maxlength="-1" auto-height adjust-position="true" />
+          </view>
+        </view>
+
+        <view class="user-input-radio">
+          <view class="radio-wrap" style="input-size">
+            <view class="btn-radio">Gender</view>
+            <radio-group class="radio-group" name="gender">
+              <label class="radio-inline"><radio value="Male" checked="{{gender_male}}"/>Male</label>
+              <label class="radio-inline"><radio value="Female" checked="{{gender_female}}"/>Female</label>
+            </radio-group>
+          </view>
+        </view>
+
+        <view class="user-input-radio">
+          <view class="radio-wrap" style="input-size">
+            <view class="btn-radio">Adopted</view>
+            <radio-group class="radio-group" name="adopted">
+              <label class="radio-inline"><radio value="true" checked="{{adopted_t}}" />Yes</label>
+              <label class="radio-inline"><radio value="false" checked="{{adopted_f}}" color="red" />No</label>
+            </radio-group>
+          </view>
+        </view>
+
+        <view class="user-input-radio">
+          <view class="radio-wrap"  style="input-size">
+            <view class="btn-radio">Vaccinated</view>
+            <radio-group class="radio-group" name="vaccinated">
+              <label class="radio-inline"><radio value="true" checked="{{vaccinated_t}}"/>Yes</label>
+              <label class="radio-inline"><radio value="false" color="red" checked="{{vaccinated_f}}"/>No</label>
+            </radio-group>
+          </view>
+        </view>
+
+        <view class="user-input-radio">
+          <view class="radio-wrap"  style="input-size">
+            <view class="btn-radio">Healthy</view>
+            <radio-group class="radio-group" name="healthy">
+              <label class="radio-inline"><radio value="true" checked="{{healthy_t}}"/>Yes</label>
+              <label class="radio-inline"><radio value="false" color="red" checked="{{healthy_f}}"/>No</label>
+            </radio-group>
+          </view>
+        </view>
+
+        <view class="user-input-radio">
+          <view class="radio-wrap"  style="input-size">
+            <view class="btn-radio">Spayed</view>
+            <radio-group class="radio-group" name="spayed">
+              <label class="radio-inline"><radio value="true" checked="{{spayed_t}}"/>Yes</label>
+              <label class="radio-inline"><radio value="false" color="red" checked="{{spayed_f}}"/>No</label>
+            </radio-group>
+          </view>
+        </view>
+
+        <!-- <view class="wrap"> -->
+          <block wx:if="{{pet_image != ''}}">
+            <view class="pet-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{pet_image}}');"></view>
+          </block>
+        <!-- </view> -->
+  
+        <view class="user-input" value="{{image}}" name="image" bindtap="choosePhoto">
+          <view class="text-area-wrap image-upload">
+            <view style="background-image: url('../../images/camera.png'); height:60px; width:60px;background-size:cover;" ></view>
+            <view class="text-area-wrap">Tap here to upload a photo</view>
+          </view>
+        </view>
+
+        <button bindsubmit="bindSubmit" style="margin-bottom:30px " type="primary" form-type="submit" pet_id="{{pet_id}}" loading="{{loading}}">{{button}}</button>
+      </form>
+
+    </view>
+  </view>
+</template>

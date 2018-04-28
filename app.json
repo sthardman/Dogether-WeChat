@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/application_new/application_new",
+    "pages/application_confirm/application_confirm",
+    "pages/pet_add/pet_add",
+    "pages/application_my_apps/application_my_apps",
+    "pages/application_list/application_list",
+    "pages/application_show/application_show",   
+    "pages/pet_edit/pet_edit",
+    "pages/user_show/user_show",
+    "pages/info_index/info_index",
+    "pages/index_info/index_info",
+    "pages/profile_edit/profile_edit",
+    "pages/info_show/info_show",
+    "pages/user/user",
+    "pages/search/search",
+    "pages/pet_show/pet_show"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "DOGether",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "selectedColor": "white",
+    "borderStyle": "black",
+    "color": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-blue.png"
+      },
+
+      {
+        "pagePath": "pages/pet_add/pet_add",
+        "iconPath": "images/plus.png",
+        "selectedIconPath": "images/plus-blue.png"
+      },
+
+
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user-blue.png"
+      }
+    ]
+  }
+}

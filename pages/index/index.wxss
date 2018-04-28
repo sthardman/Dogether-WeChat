@@ -1,0 +1,204 @@
+@import "../../wxSearchView/wxSearchView.wxss";
+.card {
+  height: 200px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  border-radius: 10px;
+  margin: 10px;
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+}
+.heart {
+  height: 20px;
+  width: 20px;
+  top: 10px;
+  left: 10px;
+  position: relative;
+}
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.card-description .h2 {
+  font-size: 24px;
+}
+.card-description .p {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: lighter;
+}
+
+.card-btm-right {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.card-btm-right .h2 {
+  font-size: 24px;
+  text-align: right;
+}
+.card-btm-right .p {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: lighter;
+  text-align: right;
+}
+
+.clock {
+  position: absolute;
+  right: 70px;
+  top: 7px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  background-color: #56CCF2;
+  justify-content: center;
+  align-items: center;
+}
+.h1 {
+  color: white;
+  font-size: 24px;
+}
+.h2{
+  color: #fff;
+  font-size: 16px;
+}
+
+.h3{
+  color: #fff;
+  font-size: 13px;
+}
+
+.btn {
+  position: relative; 
+  width: 25px;
+  height: 25px;
+  align-self: flex-end; 
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+.wxSearch{
+  position: absolute;
+  top: 43px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 1px #eee solid;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.wxSearchInner{
+  background-color: #fff;
+}
+.wxSearch-section{
+  background-color: #fff;
+  padding: 5px 10px;
+  border: 1px #eee solid;
+}
+.wxSearch-pancel{
+  display: flex;
+  flex-direction: row;
+}
+.wxSearch-input{
+  flex: 8; 
+  background-color: #eee;
+  padding: 5px 10px;
+}
+.wxSearch-button{
+  flex: 1;
+  border: none !important;
+  color: cornflowerblue !important;
+}
+
+.wxSearchTitle{
+  display: block;
+  padding: 10px 5px 5px 10px;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+.wxSearchMindKeyItem{
+  padding: 10px 5px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  font-size: 14px;
+  color: cornflowerblue;
+}
+
+.wxSearchKeyList{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.wxSearchKeyItem{
+  flex: 0 0 20%;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #eee;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.wxSearchHistoryItem{
+  padding: 10px 5px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+}
+.wxSearchHistoryItemText{
+  flex: 8;
+  font-size: 14px;
+}
+.wxSearchHistoryItemDel{
+  flex: 1;
+  font-size: 12px;
+  text-align: center;
+  padding: 3px 5px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+.wxSearchHistoryEmpty{
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  font-size: 12px;
+}
+.wxSearchDeleteAllBtn{
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 12px;
+}
+.search-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

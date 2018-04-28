@@ -1,0 +1,10 @@
+<template name="avatar_user">
+  <view class="avatar-card">
+    <image class="avatar-sm" src="{{user.image}}"/>
+    <view class="user-info">
+    <view style="font-weight: bolder; text-align: center;" class="h2">{{user.name}}</view>
+     <view style="text-align: center;" class="h3">{{user.city}}</view>
+     <view style="font-style: italic; text-align: center;" class="h3">"{{user.description}}"</view> 
+    </view>
+  </view>
+</template>

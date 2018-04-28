@@ -1,0 +1,23 @@
+<import src="../../wxSearchView/wxSearchView.wxml"/>
+
+<view class="search-input">
+  <view > Seach </view>
+  <icon class="weui-icon-search_in-box" type="search" size="14" bindtap="wxSearchTab"></icon>
+</view>
+
+<!-- <view class="container"> -->
+ <view wx:for="{{pets}}" wx:for-item="pet" wx:key="pet.id" bindtap="showPet" class="card" style="background-image: linear-gradient( rgba(0,0,0,0.3), rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url('{{pet.image}}');" data-pet="{{pet}}"> 
+     <!-- <view class="card-category">{{pet.age}}</view> -->
+     <!-- <image bindtap="tapButton1" wx:if="{{!showButton1}}" class="btn" src="/images/sq-like.png" data="heart"></image>
+  <image bindtap="tapButton1" wx:if="{{showButton1}}" class="btn" src="/images/like.png"></image> -->
+  <image class="heart" src="/images/heart.png"/>
+     <view class="card-description">
+     <view class="h2">{{pet.name}}</view>
+     <!-- <view class="h3">Size: {{pet.size}}</view> -->
+     </view>
+     <view class="card-btm-right">
+      <view class="h3">{{pet.city}}</view>
+     </view>
+    <image class="card-user" src="{{pet.user_image}}"/> 
+   <a class="card-link" href="#" ></a>
+  </view>

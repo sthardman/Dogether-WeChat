@@ -1,0 +1,34 @@
+<!--profile_edit.wxml-->
+<view class="profile-container">
+    <view class="wrap">
+      <form bindsubmit="bindSubmit">
+      
+        <view class="user-input">
+          <view class="text-area-wrap">
+            <textarea value="{{user.name}}" style="input-size" placeholder="Name" placeholder-style="color:black;" class="input-height" name="name" maxlength="-1" auto-height adjust-position="true" />
+          </view>
+        </view>
+        
+        <view class="user-input">
+          <view class="text-area-wrap">
+            <textarea value="{{user.city}}" style="input-size" placeholder="City" placeholder-style="color:black;" class="input-height" name="city" maxlength="-1" auto-height adjust-position="true" />
+          </view>
+        </view>
+        
+        <view class="user-input">
+          <view class="text-area-wrap">
+            <textarea value="{{user.description}}" style="input-size" placeholder="About you ..." placeholder-style="color:black;" class="input-height" name="description" maxlength="-1" auto-height adjust-position="true" />
+          </view>
+        </view>
+
+        <!-- <view class="user-input">
+          <view class="text-area-wrap" bindtap="choosePhoto">
+            <textarea value="{{image}}" style="input-size" placeholder="Tap to choose a photo" class="input-height" name="image" maxlength="-1" auto-height /> -->
+          <!-- </view> -->
+        <!-- </view> -->
+
+        <button bindsubmit="bindSubmit" style="margin-bottom:30px " type="primary" form-type="submit">Edit profile</button>
+      </form>
+
+    </view>
+  </view>

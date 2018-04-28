@@ -1,0 +1,26 @@
+
+<view class="application-container">
+    <view class="wrap">
+      <form bindsubmit="bindSubmit">
+        
+        <view class="user-input">
+          <view class="tips">Why do you want to adopt {{pet.name}} ?</view>
+          <view class="text-area-wrap comment">
+            <textarea value="{{comment}}" style="input-size" placeholder="fill here ..." placeholder-style="color:black;" class="input-height" name="comment" maxlength="-1" auto-height adjust-position="true" />
+           </view> 
+        </view>
+        
+        <view class="user-input">
+
+          <view class="tips">Phone number or Wechat ID</view>
+          <view class="text-area-wrap contact_comment">
+            <textarea value="{{contact_comment}}" style="input-size" placeholder="fill here..." placeholder-style="color:black;" class="input-height" name="contact_comment" maxlength="-1"  auto-height  adjust-position="true" />
+          </view>
+        </view>
+
+        <button bindsubmit="bindSubmit" style="margin-bottom:30px " type="primary" form-type="submit">Submit Your Application!</button>
+      </form>
+    </view>
+  </view> 
+
+  

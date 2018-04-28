@@ -1,0 +1,37 @@
+<!--user.wxml-->
+ <view class="main-container"> 
+  <view class="profile-card">
+  <view class="btn-edit-profile" id="{{user.id}}" bindtap="editProfile">EDIT</view>
+  <import src="../shared/avatar_user.wxml" />
+  <template is="avatar_user" data="{{user: user}}" />
+  </view>
+
+
+
+<view class="profile-button-blue" bindtap="myApplications">MY APPLICATIONS</view>
+<!-- <view class="profile-button" id="{{user.id}}" bindtap="editProfile">EDIT PROFILE</view> -->
+ <view class="profile-button-blue" bindtap="addPet" id="{{user.id}}">ADD PET</view> 
+
+<!-- <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%"> -->
+
+<view wx:for="{{pets}}" wx:for-item="pet" wx:key="pet" class="scroll-view-item_H demo-text-1 card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{pet.image}}');" data-pet="{{pet}}" data-pet-id="{{pet.id}}" bindtap="showPet">
+ <view class="btn-edit-pet" bindtap="editPet" data-pet-id="{{pet.id}}">EDIT</view> 
+   
+    <view class="card-category" >
+      {{pet.location}}
+    </view>
+
+    <view class="card-description" >
+
+      <view class="name">
+        {{pet.name}}
+      </view>
+
+      <view class="tag">
+        {{pet.description}}
+      </view>
+    <!-- <image class="delete" bindtap="deletePet" src = "/images/delete.png" data-pet-id="{{pet.id}}"></image> -->
+    </view>
+  </view>
+    <!-- </scroll-view> -->
+ </view> 

@@ -1,0 +1,28 @@
+<view class="pet-name-owner-row">
+  <view class="pet-owner-avatar-city-col">
+    <view class="pet-owner-avatar-div">
+      <image class="avatar-circle-profile" src="{{user.image}}"/>
+    </view>
+  </view>
+  <view class="pet-name-city-vir-div">
+  </view>
+  <view class="pet-name-city-col">
+    <view class="pet-name-div">
+               {{user.name}}
+    </view>
+    <view class="pet-city-div">
+        {{user.city}}
+    </view>
+    <view class="pet-time-div">
+        Last Activity: {{user.last_sign_in_at}} ago
+    </view>
+  </view>
+  
+</view>
+
+<view class="user-description">
+<view class="h2">About Me</view>
+<view class="p">
+{{user.description}}
+</view>
+</view>

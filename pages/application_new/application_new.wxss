@@ -1,0 +1,23 @@
+/* application_new.wxss */
+
+.application-container {
+  width: 100%;
+  background-color: #eee;
+  margin: 0 auto;
+  padding-top: 30rpx;
+}
+.wrap {
+  width: 95%;
+  margin: 0 auto;
+}
+.user-input {
+  width: 100%;
+  margin-bottom: 10rpx;
+  padding: 10rpx 0;
+  font-size: 35rpx;
+  color:black;
+}
+.text-area-wrap {
+  padding: 15rpx 15rpx;
+  background-color: #fff;
+}

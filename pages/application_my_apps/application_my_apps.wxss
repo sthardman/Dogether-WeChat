@@ -1,0 +1,150 @@
+
+.pet-applications-bg {
+  background-color: #68acaf;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.applications {
+   background-color: #01BAEF;
+  /* background-color: #0ECEDE; */
+  width:100%;
+  align-items: center;
+
+}
+
+.applicants-box {  //white box containing applicants
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+  border-radius-bottom-right: 5px;
+  border-radius-bottom-left: 5px;
+}
+
+.applicants-row {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid lightgrey;
+
+}
+
+
+
+
+  .avatar-sm {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+  }
+
+  .applicants-avatar {
+    padding: 10px;
+  }
+
+  .applicants-name {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  .applicants-time {
+    color: grey;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+  }
+
+  .applicants-btn {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-content: right;
+  }
+.applicants-status-declined {
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+    font-size: 12px;
+  background-color: lightcoral;
+}
+
+.applicants-status-pending {
+
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+  background-color: #FFD04D;
+
+}
+
+.your-pet-div {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* margin-bottom: 10px;
+    margin-top: 10px; */
+
+}
+
+  .pet-name {
+
+    padding-right: 5px;
+    padding-left: 5px;
+    flex-grow: 1;
+    text-align: left;
+  }
+
+.your-pet-label {
+  font-size: 10px;
+  background-color: orange;
+  border-radius: 2px;
+  padding: 3px;
+}
+
+.applicants-div {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+   margin-top: 20px;
+  margin-bottom: 20px; 
+  border-radius: 4px;
+  color: white;
+  background-color: #FFD04D;
+
+}
+
+.applicants-vir-div {
+  height: 100%;
+  width: 2px;
+  background-color: white;
+  marin-right: 5px;
+  margin-left: 5px;
+}
+
+.applicants-count {
+  font-size: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+
+.applicants-received-label {
+  font-size: 10px;
+  /* padding: 10px; */
+}
