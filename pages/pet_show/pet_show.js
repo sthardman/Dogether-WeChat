@@ -92,6 +92,12 @@ Page({
     });
   },
 
+  viewWebShowPet(e) {
+    let page = this;
+    wx.navigateTo({
+      url: `http://www.apple.com`
+    });
+  },
 
   onShareAppMessage: function (res) {
     wx.showShareMenu({

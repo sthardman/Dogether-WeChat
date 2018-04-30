@@ -2,10 +2,10 @@
 App({
   onLaunch: function () {
     //PRODUCTION ENVIRONMENT///
-    //let api_url = 'https://dogether.wogengapp.cn/api/v1';
+    let api_url = 'https://dogether.wogengapp.cn/api/v1';
     
     //DEVELOPMENT ENVIRONMENT///
-    let api_url = 'http://localhost:3000/api/v1';
+    // let api_url = 'http://localhost:3000/api/v1';
 
     wx.setStorageSync("apiUrl", api_url);
     // console.log('登录')

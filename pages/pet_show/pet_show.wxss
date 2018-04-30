@@ -16,8 +16,88 @@
   /* border-radius: 10px; */
 }
 .layout-pet-show {
-  margin: 15px;
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
 
+}
+
+.pet-banner-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 50px;
+}
+
+.pet-banner-name {
+  font-size: 35px;
+     flex-grow: 1; 
+    font-weight: bolder;
+      text-transform: uppercase;
+      padding-bottom: 3px;
+}
+
+
+.pet-banner-from-city {
+  display: flex;
+  flex-direction: column;
+   flex-grow: 1; 
+  justify-content: space-evenly;
+    /* height: 100%; */
+}
+
+.pet-banner-from {
+  text-align: right;
+  font-size: 10px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.loc-pin {
+  height: 25px;
+  width: 25px;
+
+}
+
+.pet-banner-city {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+}
+
+.pet-banner-city-name {
+  padding-top: 5px;
+  text-align: right;
+  font-size: 20;
+  text-transform: uppercase; 
+}
+
+
+
+.pet-banner-added {
+  font-size: 10px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.btn-share-blue {
+   background-color: #2E9CE9; 
+  height: 47px;
+  border-radius: 10px;
+  /* margin-right: 20px; */
+  /* margin-left: 20px; */
+  margin-top: 5px;
+   margin-bottom: 10px; 
+  /* padding-bottom: 5px; */
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  /* align-content: center; */
+  /* padding-top: 16px; */
+  /* border: 3px solid #2E9CE9; */
 }
 
 
@@ -459,8 +539,8 @@
 .pet-name-div {
   font-size: 40px;
   font-weight: bolder;
-  margin-top: 15px;
-    margin-bottom: 15px;
+  /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
 }
 
 .pet-city-div {
@@ -475,11 +555,21 @@
   font-weight:lighter;
 }
 
+.badge {
+  position: relative;
+  /* top: 10px; */
+  /* left: 10px; */
+  /* rotate: 45; */
+    height: 100px;  
+  width: 100px;
+}
+
 
 .pet-owner-avatar-city-col {
 
   display: flex;
    flex-direction: column;
+   padding-top: 7px;
   padding-right:20px;
     padding-left:20px;
     flex-grow: 1;
