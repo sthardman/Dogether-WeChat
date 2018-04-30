@@ -1,8 +1,11 @@
 /* user.wxss */
 
+page {
+  background-color: #eee;
+}
 
 .main-container {
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
   padding-top: 30px;
   /* height: 100vh; */
 }

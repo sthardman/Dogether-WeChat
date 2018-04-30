@@ -1,12 +1,41 @@
 <!--pages/show/show.wxml-->
 <view class="header">
-   <view class="banner" style="background-image: url('{{pet.image}}')">
+  <view class="banner" style="background-image: url('{{pet.image}}')">
+    <block wx:if="{{pet.adopted == false}}">
+      <image class="badge" src="/images/available-badge-white-shadow.png"/>
+    </block>
+
+    <block wx:elif="{{pet.adopted == true}}">
+      <image class="badge" src="/images/adopted-badge-blue.png"/>
+    </block>
   </view>
 </view>
 
+
 <view class="layout-pet-show">
 
+<view class="pet-banner-row">
+  <view class="pet-banner-name">
+      {{pet.name}}
+  </view>
+  <view class="pet-banner-from-city">
+    <!-- <view class="pet-banner-from"> -->
+    <!-- FROM -->
+    <!-- </view> -->
+    <view class="pet-banner-city">
+        <image class="loc-pin" src="/images/location-pin.png"/>  
+      <view class="pet-banner-city-name"> {{pet.city}}
+      </view>
+    </view>
+    <view class="pet-banner-added">
+    Updated: {{pet.time_updated}} ago
+    </view>
+  </view>
+</view>
 
+<view class="btn-share-blue"><button class="btn-share-blue" style="padding-bottom: 20px;" open-type="share">SHARE</button></view>
+
+<!-- 
 <view class="pet-menu-bar">
   <block wx:if="{{pet.user_id == user.id}}">
     <view class="pet-menu-btn-edit" bindtap="petEdit" id="{{pet.id}}">EDIT</view>
@@ -18,7 +47,7 @@
     <view class="pet-menu-btn-left" bindtap="newApplication">ADOPT</view>
   </block>
   <view class="pet-menu-btn-right"><button class="pet-menu-btn-right-wx"open-type="share">SHARE</button></view>
-</view>
+</view> -->
 
 <!-- pet name and owner section-->
 
@@ -29,9 +58,7 @@
 
 <!-- pet about section--> 
 
-<view class="pet-name-div">
-               {{pet.name}}
-</view>
+
 
   <view class="pet-owner-div-1">  
 <view bindtap="showUser" id="{{pet.user_id}}" class="pet-name-owner-row">
@@ -47,7 +74,7 @@
       <view class="pet-city-flex"> {{pet.city}}</view>
     </view>
     <view class="pet-updated-div">
-        Updated: {{pet.time_updated}} ago 
+        Active: {{pet.time_updated}} ago 
     </view>
   </view>
 </view>
@@ -57,7 +84,7 @@
   <!-- <view class="pet-attr-div">   -->
 <view class="profile-div">
 
-<view class="p">{{pet.description}} It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</view>
+<view class="p">{{pet.description}}</view>
 </view>
 <!-- </view> -->
 
@@ -203,38 +230,23 @@
   </view>
 
 </view> -->
+  <block wx:if="{{pet.adopted == false}}">
+    <view class="pet-adopt-div">
+      <view class="confirm-div-adopt" >
+        <view class="h1"> Interested in {{pet.name}}?            </view>
+        <view class="h4">You can reach the rescuer by clicking their profile to find their contact info</view>
+        <view class="btn-adopt-pet" bindtap="showUser" id="{{pet.user_id}}"> Visit Profile </view>
+      </view>
+    </view>
+  </block>
 
-<!-- START --- ASK USER TO ADOPT BLOCK -->
-
-<block wx:if="{{pet.user_id == user.id}}">
-  <!-- intentionally left blank because user owns this pet -->
-</block>
-
-
-<block wx:elif="{{ applied == true }}">
-  <!-- intentionally left blank because user has already applied> -->
+  <block wx:elif="{{pet.adopted == true}}">
     <view class="pet-already-adopt-div">
-    <view class="confirm-div" >
-      <view style="text-align: center;" class="h1"> You've already applied for {{pet.name}}</view>
+      <view class="confirm-div" >
+        <view style="text-align: center;" class="h1">{{pet.name}} Has a home</view>
       <!-- <view  style="text-align: center;" class="h4 "> Check your applications</view> -->
-    <view  class="btn-check-apps" plain="{{plain}}" bindtap="myApplications" data-id="{{id}}"> View Applications </view>
-  </view>
-  </view>
-</block>
 
-
-<block wx:else>
-  <!-- if you user hasn't applied to this pet it will be displayed> -->
-  <view class="pet-adopt-div">
-    <view class="confirm-div-adopt" >
-      <view class="h1"> Adopt {{pet.name}}</view>
-      <view class="h4 ">Think you'd make a great home for {{pet.name}}?</view>
-    <view  class="btn-adopt-pet" plain="{{plain}}" bindtap="newApplication" data-id="{{id}}"> Adopt Me! </view>
-  </view>
-  </view>
-</block>
-
-<!-- END --- ASK USER TO ADOPT BLOCK -->
-
-
+      </view>
+    </view>
+  </block>
 </view>
