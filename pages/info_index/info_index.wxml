@@ -1,6 +1,0 @@
-<!--pages/info_index/info_index.wxml-->
-<view class="container">
-  <view class="h1">About DOGether</view>
-  <view class="p">We display pets that need a home and allow users to inquire or forward to friends</view>
-  <view></view>
-</view>

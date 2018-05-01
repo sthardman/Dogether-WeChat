@@ -1,2 +1,0 @@
-<import src="../shared/pet_form.wxml" />
-<template is="pet_form" data="{{button: 'Add a new Pet!',sizeArray: ['<5kg Small','5~10kg Medium', '10~15kg Large', '>15kg Extra Large'],size_index: size_index, loading:loading}}" />
